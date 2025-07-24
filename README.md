@@ -115,7 +115,7 @@ All configuration can be set via environment variables in `.env`:
 ```bash
 # Core settings
 OPENAI_API_KEY=your_key
-OPENAI_MODEL=gpt-4-turbo-preview
+OPENAI_MODEL=gpt-4.1
 BASE_PATH=/path/to/documents
 
 # Processing settings
