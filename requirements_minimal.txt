@@ -1,0 +1,13 @@
+# Core dependencies - minimal version for testing
+python-dotenv
+gradio
+langchain
+langchain-openai
+langchain-chroma
+langchain-community
+pypdf
+python-docx
+docx2txt
+pandas
+openpyxl
+chromadb
