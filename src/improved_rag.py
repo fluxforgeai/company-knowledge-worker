@@ -171,7 +171,7 @@ class ImprovedRAGPipeline:
             
             # Create enhanced context
             enhanced_context = f"""
-            Based on comprehensive analysis of Artiligence documents, here are ALL the current projects:
+            Based on comprehensive analysis of company documents, here are ALL the current projects:
 
             {project_info}
             
@@ -274,7 +274,7 @@ class ImprovedRAGPipeline:
     
     def test_pipeline(self) -> Dict[str, Any]:
         """Test the enhanced RAG pipeline"""
-        test_question = "What projects is Artiligence working on? List all current projects with details."
+        test_question = "What projects is the company working on? List all current projects with details."
         
         logger.info("Testing enhanced RAG pipeline...")
         result = self.ask_question(test_question)

@@ -2,8 +2,8 @@
 """
 Company Knowledge Worker - Enhanced Version with Improved RAG
 
-A comprehensive RAG-powered Q&A assistant for Artiligence company documents
-Created by Claude Code for Johan Genis, co-owner of Artiligence (Pty) Ltd
+A comprehensive RAG-powered Q&A assistant for company documents
+Created with Claude Code - AI-powered development assistant
 
 Enhanced version with better project coverage and retrieval accuracy.
 """
@@ -27,7 +27,7 @@ from src.chat_interface import ChatInterface, SimpleChatInterface
 def parse_arguments():
     """Parse command line arguments"""
     parser = argparse.ArgumentParser(
-        description="Company Knowledge Worker - Enhanced RAG-powered Q&A for Artiligence documents"
+        description="Company Knowledge Worker - Enhanced RAG-powered Q&A for company documents"
     )
     
     parser.add_argument(
@@ -209,8 +209,8 @@ OPENAI_API_KEY=your_openai_api_key_here
 # Optional: Model configuration
 OPENAI_MODEL=gpt-4-turbo-preview
 
-# Optional: Document path (default: /Users/johanjgenis/Documents/Artiligence)
-BASE_PATH=/Users/johanjgenis/Documents/Artiligence
+# Optional: Document path (default: /path/to/company/documents)
+BASE_PATH=/path/to/company/documents
 
 # Optional: Database configuration
 DB_NAME=vector_db
@@ -249,7 +249,7 @@ def main():
     # Show startup banner
     logger.info("="*60)
     logger.info("🏢 COMPANY KNOWLEDGE WORKER - ENHANCED")
-    logger.info("   RAG-powered Q&A for Artiligence Documents")
+    logger.info("   RAG-powered Q&A for Company Documents")
     logger.info("   Created by Claude Code")
     if args.use_improved_rag:
         logger.info("   🚀 ENHANCED MODE: Better Project Coverage")

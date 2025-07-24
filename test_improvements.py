@@ -36,7 +36,7 @@ def test_improved_rag():
         
         # Test comprehensive project query
         print("\n🔍 Testing comprehensive project query...")
-        test_question = "What projects is Artiligence currently working on? List all projects with details."
+        test_question = "What projects is the company currently working on? List all projects with details."
         
         result = improved_rag.ask_question(test_question)
         
@@ -61,7 +61,7 @@ def test_improved_rag():
         # Test regular query
         print("\n" + "="*50)
         print("🔍 Testing regular query...")
-        regular_question = "What contracts does Artiligence have?"
+        regular_question = "What contracts does the company have?"
         
         result3 = improved_rag.ask_question(regular_question)
         
@@ -92,7 +92,7 @@ def compare_retrieval_methods():
             print("❌ No vector store available")
             return
         
-        test_query = "What projects is Artiligence working on?"
+        test_query = "What projects is the company working on?"
         
         # Standard retrieval (k=10)
         print(f"🔍 Standard retrieval (k=10):")

@@ -31,13 +31,13 @@ class ChatInterface:
         """Create the enhanced Gradio chat interface with persistent examples"""
         try:
             with gr.Blocks(
-                title="🏢 Artiligence Knowledge Worker",
+                title="🏢 Company Knowledge Worker",
                 theme=gr.themes.Soft(),
                 css=self._get_custom_css_with_examples()
             ) as interface:
                 
                 # Header
-                gr.Markdown("# 🏢 Artiligence Knowledge Worker")
+                gr.Markdown("# 🏢 Company Knowledge Worker")
                 gr.Markdown(self._get_description())
                 
                 # Persistent example questions at the top
@@ -74,7 +74,7 @@ class ChatInterface:
                 
                 msg = gr.Textbox(
                     label="Your question",
-                    placeholder="Ask me anything about Artiligence...",
+                    placeholder="Ask me anything about the company...",
                     container=False,
                     scale=7
                 )
@@ -127,7 +127,7 @@ class ChatInterface:
     def _get_description(self) -> str:
         """Get the interface description"""
         return """
-        Ask me anything about Artiligence company documents, projects, invoices, contracts, and more! 
+        Ask me anything about company documents, projects, invoices, contracts, and more! 
         
         **Enhanced with comprehensive project knowledge including:**
         - SQL Server upgrades and database infrastructure
@@ -146,13 +146,13 @@ class ChatInterface:
     def _get_examples(self) -> List[str]:
         """Get example questions for the interface"""
         return [
-            "What projects is Artiligence working on?",
+            "What projects is the company working on?",
             "Tell me about the SQL Server upgrade project",
             "What is the Precision Agriculture Asset Management project?",
             "Describe the SFMS Mining Analytics project", 
             "What database migration work is being done?",
             "Tell me about the company's invoices and financial information",
-            "What contracts does Artiligence have?",
+            "What contracts does the company have?",
             "Summarize the company's business activities",
             "What technical documentation is available?",
             "Tell me about the Advanced Driver Assistance System project"
@@ -300,7 +300,7 @@ class SimpleChatInterface:
         print("  • clear   - Clear conversation history")
         print("  • quit    - Exit the application")
         print("\\n💡 You can ask questions about:")
-        print("  • Artiligence projects and documentation")
+        print("  • Company projects and documentation")
         print("  • Company contracts and invoices")
         print("  • Technical specifications and procedures")
         print("  • Financial information and records")

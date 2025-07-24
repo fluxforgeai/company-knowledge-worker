@@ -34,9 +34,9 @@ def debug_project_retrieval():
     
     # Test project-related queries
     test_queries = [
-        "What projects is Artiligence working on?",
+        "What projects is the company working on?",
         "List all current projects",
-        "Tell me about Artiligence projects", 
+        "Tell me about company projects", 
         "SQL Server upgrade project",
         "Precision Agriculture project"
     ]

@@ -10,12 +10,7 @@ A powerful RAG-powered Q&A assistant for company documents, built with Python, L
 - **Multi-format Document Support**: PDF, Word, Excel, text files, and more
 - **Project-Aware Search**: Enhanced retrieval for better project information coverage
 - **Web & CLI Interfaces**: Choose between Gradio web UI or command-line interface
-- **Comprehensive Project Knowledge**:
-  - SQL Server upgrades and database infrastructure
-  - Precision agriculture and asset management systems
-  - Mining analytics and fleet management (SFMS)
-  - Database migration projects
-  - Advanced driver assistance systems (ADAS)
+- **Comprehensive Knowledge Base**: Automatically categorizes and indexes various project types and document categories
 
 ## Quick Start
 
@@ -39,7 +34,7 @@ Create a `.env` file with your settings:
 OPENAI_API_KEY=your_openai_api_key_here
 
 # Optional: Document path
-BASE_PATH=/Users/johanjgenis/Documents/Artiligence
+BASE_PATH=/path/to/your/company/documents
 
 # Optional: Model configuration (now supports GPT-4.1)
 OPENAI_MODEL=gpt-4.1
@@ -140,13 +135,13 @@ GRADIO_SHARE=False
 
 ## Example Questions
 
-- "What projects is Artiligence working on?"
-- "Tell me about the SQL Server upgrade project"
-- "What is the Precision Agriculture Asset Management project?"
-- "Describe the SFMS Mining Analytics project"
-- "What database migration work is being done?"
-- "Tell me about the company's invoices and financial information"
-- "What contracts does Artiligence have?"
+- "What projects is the company working on?"
+- "Tell me about current infrastructure projects"
+- "What are the main business initiatives this year?"
+- "Describe our recent technology implementations"
+- "What documentation is available for [specific project]?"
+- "Tell me about the company's financial reports"
+- "What contracts and agreements do we have?"
 
 ## Troubleshooting
 
@@ -177,4 +172,4 @@ The application is built with:
 - **Gradio**: Web interface
 - **Python 3.13**: Runtime environment
 
-Created by Claude Code for Johan Genis, co-owner of Artiligence (Pty) Ltd.
+Created with Claude Code - AI-powered development assistant.

@@ -107,7 +107,7 @@ class RAGPipeline:
     
     def test_pipeline(self) -> Dict[str, Any]:
         """Test the RAG pipeline with a sample question"""
-        test_question = "What information do you have about Artiligence? Give me a brief overview."
+        test_question = "What information do you have about the company? Give me a brief overview."
         
         logger.info("Testing RAG pipeline...")
         result = self.ask_question(test_question)

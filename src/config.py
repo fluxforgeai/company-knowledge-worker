@@ -21,7 +21,7 @@ class Config:
         self.DB_NAME = os.getenv('DB_NAME', 'vector_db')
         
         # Document processing configuration
-        self.BASE_PATH = os.getenv('BASE_PATH', '/Users/johanjgenis/Documents/Artiligence')
+        self.BASE_PATH = os.getenv('BASE_PATH', '/path/to/company/documents')
         self.MAX_FILE_SIZE = int(os.getenv('MAX_FILE_SIZE', '100000'))  # 100KB
         
         # Chunking configuration

@@ -213,7 +213,7 @@ class DocumentProcessor:
 
     def load_enhanced_project_documents(self) -> List[Document]:
         """Load project documents with enhanced context and processing"""
-        logger.info("Loading Artiligence project documents with enhanced context...")
+        logger.info("Loading company project documents with enhanced context...")
         
         # Get all project files specifically
         project_files = glob.glob(os.path.join(self.base_path, "Projects/**/*"), recursive=True)
@@ -239,7 +239,7 @@ class DocumentProcessor:
                 def add_enhanced_metadata(doc, doc_type, file_type, project_name):
                     doc.metadata["doc_type"] = doc_type
                     doc.metadata["file_type"] = file_type
-                    doc.metadata["company"] = "Artiligence (Pty) Ltd"
+                    doc.metadata["company"] = "Company"
                     doc.metadata["project"] = project_name
                     return doc
                 
@@ -249,7 +249,7 @@ class DocumentProcessor:
                         loader = PyPDFLoader(file_path)
                         docs = loader.load()
                         for doc in docs:
-                            # Add Artiligence context to the document content
+                            # Add company context to the document content
                             enhanced_content = f"ARTILIGENCE PROJECT: {project_name}\\n\\nDocument: {filename}\\n\\n{doc.page_content}"
                             doc.page_content = enhanced_content
                             documents.append(add_enhanced_metadata(doc, "Projects", "pdf", project_name))

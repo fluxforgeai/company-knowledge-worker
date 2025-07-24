@@ -79,7 +79,7 @@ class QuickFixRAGPipeline(RAGPipeline):
                 enhanced_question = f"""
                 {question}
                 
-                Please provide information about ALL current Artiligence projects. Make sure to cover:
+                Please provide information about ALL current company projects. Make sure to cover:
                 - SQL Server Upgrades (database infrastructure projects)
                 - SFMS Mining Analytics (mining operations and analytics)
                 - Precision Agriculture Asset Management (farming and GIS solutions)
@@ -209,7 +209,7 @@ def main():
             
             # Update interface description to mention improvements
             interface.description = """
-            Ask me anything about Artiligence company documents, projects, invoices, contracts, and more! 
+            Ask me anything about company documents, projects, invoices, contracts, and more! 
             
             **🚀 ENHANCED with better project coverage:**
             - Increased retrieval to 25 chunks (was 10) for comprehensive project information
@@ -217,7 +217,7 @@ def main():
             - Better coverage of all current projects
             - Automatic port management (kills conflicting processes)
             
-            **All Artiligence projects covered:**
+            **All company projects covered:**
             - SQL Server upgrades and database infrastructure
             - SFMS Mining Analytics (mining operations)
             - Precision Agriculture Asset Management (farming solutions)
